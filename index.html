@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        *,
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgb(72, 135, 172);
+        }
+
+        body{
+            margin: 10px;
+            padding: 12%;
+        }
+
+        #login{
+            align-items: center;
+            padding-left: 40%;
+            margin-top: 5px;
+            background-color: azure
+        }
+
+        #submitemail{
+            background-color: azure
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 400px;
+            font-size: 16px;
+            border: 1px solid black;
+            gap: 8px;
+            padding: 15px;
+            background-color: azure;
+        }
+
+        #mail {
+            padding: 12px;
+            background-color: rgb(230, 229, 229);
+            font-size: 16px;
+            border: none;
+            color: black;
+        }
+
+        #cekbutton {
+            border: none;
+            border-radius: 2px;
+            background-color: gold;
+            color: black;
+            padding: 8px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        #cekbutton:hover{
+            background-color: goldenrod;
+        }
+
+        #announcement{
+            color: red;
+            background-color: azure;
+            font-size: large;
+        }
+
+        #hack{
+            color: rgb(70, 221, 39);
+            background-color: azure;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="login">Login</h2>
+        <label id="submitemail">Submit email to continue login:</label>
+        <input type="" placeholder="Email" id="mail" />
+        <button id="cekbutton" onclick="buttoncheck()">Submit</button>
+        <marquee direction='right' id="announcement"></marquee>
+        <marquee direction='left' id="hack"></marquee>
+    </div>
+
+<script>
+    
+    function buttoncheck(){
+        const mailinput = document.getElementById('mail')
+        const announcement = document.getElementById('announcement')
+        alert("your hacked!!")
+        announcement.innerHTML = "your hacked!!   your hacked!!    your hacked!!   your hacked!!"
+        hack.innerHTML = "your hacked!!   your hacked!!    your hacked!!   your hacked!!"
+    }
+</script>
+</body>
+</html>
